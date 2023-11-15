@@ -5,11 +5,11 @@
  *      Author: Abdelrahman Mohamed
  */
 
-#include"../inc/STD_TYPES.h"
-#include"../inc/BIT_MATH.h"
-#include"../lib/CLCD_interface.h"
+#include "../inc/STD_TYPES.h"
+#include "../inc/BIT_MATH.h"
+#include "../lib/CLCD_interface.h"
 #include "../lib/TIMER0_interface.h"
-#include"../lib/TL_TIMER_interface.h"
+#include "../lib/TL_TIMER_interface.h"
 
 /*Not a clean code by any means no comments and not a structured code
  * didn't fully edit the other .h files just making it work
@@ -31,9 +31,8 @@ int main(void)
 	CLCD_voidSetPostion(SECOND_LINE, 0);
 	CLCD_voidSendString("   INACCURATE   ");
 
-	while(1)
+	while (1)
 	{
 	}
 	return 0;
 }
-
