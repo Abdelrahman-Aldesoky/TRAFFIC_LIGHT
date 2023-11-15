@@ -81,9 +81,9 @@ HEXS = $(patsubst $(M_SRCS_DIR)/%.c,$(M_PROGS_DIR)/%.hex,$(SRCS))
 # On Unix-like systems, wildcard can only list .a files if they exist when Makefile is parsed.
 # Hence, we use find command on Unix-like systems to ensure LIBS is correctly populated.
 ifeq ($(OS),Windows_NT)
-    LIBS = $(wildcard $(M_LIBS_DIR)/*.a)
+LIBS = $(wildcard $(M_LIBS_DIR)/*.a)
 else
-	LIBS = $(shell find $(M_LIBS_DIR) -name '*.a' 2>/dev/null)
+LIBS = $(shell find $(M_LIBS_DIR) -name '*.a' 2>/dev/null)
 endif
 
 # Preserve intermediate files
